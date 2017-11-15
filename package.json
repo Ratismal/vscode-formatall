@@ -1,11 +1,11 @@
 {
     "name": "vscode-formatall",
     "displayName": "vscode-formatall",
-    "description": "formats everything pls",
-    "version": "0.0.1",
+    "description": "Opens every file that matches the lookup parameters, and applies the formatting action to them.",
+    "version": "0.0.2",
     "publisher": "ratismal",
     "engines": {
-        "vscode": "^1.16.0"
+        "vscode": "^1.18.0"
     },
     "categories": [
         "Other"
@@ -20,7 +20,23 @@
                 "command": "formatall.doFormat",
                 "title": "Do Format"
             }
-        ]
+        ],
+        "configuration": {
+            "title": "formatall configuration",
+            "type": "object",
+            "properties": {
+                "formatall.search.include": {
+                    "type": "string",
+                    "default": "**/*.{js,css,vue,html}",
+                    "description": "The selector to use when finding files to format"
+                },
+                "formatall.search.exclude": {
+                    "type": "string",
+                    "default": "**/{node_modules}/**",
+                    "description": "The selector to use to exclude files/directories from formatting"
+                }
+            }
+        }
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
