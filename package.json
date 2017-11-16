@@ -34,6 +34,11 @@
                     "type": "string",
                     "default": "**/{node_modules}/**",
                     "description": "The selector to use to exclude files/directories from formatting"
+                },
+                "formatall.quantity": {
+                    "type": "number",
+                    "default": 10,
+                    "description": "The number of files to format before saving and closing, and then moving to the next batch."
                 }
             }
         }

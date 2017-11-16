@@ -18,3 +18,4 @@ This extension contributes the following settings:
 
 * `formatall.search.include`: A selector to choose the files to include in the formatting
 * `formatall.search.exclude`: A selector to choose the files which should not be formatted
+* `formatall.quantity`: How many files should be processed per batch
