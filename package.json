@@ -47,6 +47,10 @@
         "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "node ./node_modules/vscode/bin/test"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Ratismal/vscode-formatall.git"
+    },
     "devDependencies": {
         "typescript": "^2.6.1",
         "vscode": "^1.1.6",
